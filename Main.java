@@ -1,22 +1,30 @@
 class Mahasiswa {
     String nama;
-    String nim;
     String prodi;
+    int nim;
+    
+    Mahasiswa(String nama, String prodi, int nim){
+        this.nama = nama;
+        this.prodi = prodi;
+        this.nim = nim;
+    }
+
     void tampilkanData(){
-        System.out.println("Nama   : " +nama);
+        System.out.println("Nama   :" +nama);
+        System.out.println("Prodi  :" +prodi);
         System.out.println("NIM    :" +nim);
-        System.out.println("Prodi  :"+prodi);
     }
 }
 
 public class Main{
     public static void main(String[] args){
-    Mahasiswa mhs1 = new Mahasiswa();
+    Mahasiswa mk1 = new Mahasiswa("Gading ", "Teknik Informatika", 125140074);
+    Mahasiswa mk2 = new Mahasiswa("Janward ", "Teknik Telekomunikasi", 125140096);
+    Mahasiswa mk3 = new Mahasiswa("Lumbantoruan ", "Teknik Elekro", 125140876);
 
-    mhs1.nama= "Abdi";
-    mhs1.nim="125140084";
-    mhs1.prodi="iep";
 
-    mhs1.tampilkanData();
+    mk1.tampilkanData();
+    mk2.tampilkanData();
+    mk3.tampilkanData();
     }
 }
