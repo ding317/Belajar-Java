@@ -4,6 +4,13 @@ class Mahasiswa{
     private String prodi;
     private int semester;
 
+    // public Mahasiswa(String nama,String nim,String prodi, int semester){
+    //     this.nama=nama;
+    //     this.nim=nim;
+    //     this.prodi=prodi;
+    //     this.semester=semester;
+    // }
+
     public void setNama(String nama){
         this.nama= nama;
     }
